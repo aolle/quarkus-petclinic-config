@@ -23,7 +23,7 @@ spec:
       containers:
       - name: quarkus-petclinic
         imagePullPolicy: Always
-        image: quay.io/siamaksade/quarkus-petclinic:latest
+        image: image-registry.openshift-image-registry.svc:5000/quarkus-petclinic:latest
         livenessProbe:
           failureThreshold: 3
           httpGet:
